@@ -88,6 +88,10 @@ function calcFinalPrice (cartTotal, couponValue, tac) {
 
 /*
     TEXT ANSWER HERE
+    For age you want to know what your demographic is in your restaurant to cater to them
+    For hunger I used a number to know on a scale of 1 to 10 how hungry they are to know how much food you need to cook.
+    I used mood because a restaurant wants to know how you are feeling that day
+    Name is used to begin the customers order so you know what food goes where
 
 */
 
@@ -100,7 +104,7 @@ function calcFinalPrice (cartTotal, couponValue, tac) {
 
 const customer = {
     age: 21,
-    hungry: true,
+    hungry: 10,
     mood: 'hungry',
     name: 'Jim'
 

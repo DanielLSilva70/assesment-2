@@ -31,6 +31,20 @@
 */
 
 //CODE HERE
+const Pizza = {
+    name: 'Daniels pizza',
+    price: 10,
+    category: 'entree',
+    popularity: 10,
+    rating: 10,
+    tags: ['gluten free', 'fat free']
+
+    
+}
+
+
+
+
 
 
 
@@ -43,6 +57,7 @@
 */
 
 //CODE HERE
+console.log(Pizza.popularity)
 
 
 /*
@@ -53,6 +68,7 @@
 */
 
 //CODE HERE
+console.log(Pizza.tags)
 
 
 /*
@@ -63,6 +79,8 @@
 */
 
 //CODE HERE
+const Pizza {price: 16}
+console.log(Pizza.price)
 
 
 /*
@@ -73,6 +91,7 @@
 */
 
 //CODE HERE
+
 
 
 //////////////////PROBLEM 3////////////////////
