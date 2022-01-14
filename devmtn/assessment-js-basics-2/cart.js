@@ -58,9 +58,11 @@ console.log(total)
 */
 
 //CODE HERE
-function calcFinalPrice() {
-
+function calcFinalPrice (cartTotal, couponValue, tac) {
+    
 }
+
+
 
 
 
@@ -95,3 +97,11 @@ function calcFinalPrice() {
 */
 
 //CODE HERE
+
+const customer = {
+    age: 21,
+    hungry: true,
+    mood: 'hungry',
+    name: 'Jim'
+
+};
