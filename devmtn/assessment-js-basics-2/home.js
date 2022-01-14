@@ -23,6 +23,12 @@
 
 //CODE HERE
 
+const greetUser = (username) => `Welcome Back ${username}`
+
+console.log(greetUser('Daniel'))
+    
+
+
 
 
 

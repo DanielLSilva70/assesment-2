@@ -20,6 +20,18 @@
 */
 
 //CODE HERE
+class Employee {
+    constructor(name, shift) {
+        this.name = name
+        this.shift = shift
+    }
+    getSchedule(schedule) {
+        this.shift = schedule
+        console.log(this.shift)
+    }
+}
+    
+
 
 
 
@@ -34,6 +46,10 @@
 */
 
 //CODE HERE
+const empOne = new Employee ('jess', 'weekday morings weekday afternoons')
+console.log(empOne)
+
+
 
 /*
     Call the `getSchedule` method on the
@@ -41,7 +57,7 @@
 */
 
 //CODE HERE
-
+//getSchedule(empOne(shift))
 
 /*
     Make a copy of the empOne object
@@ -56,6 +72,12 @@
 */
 
 //CODE HERE
+
+//const empTwo = 'Nick'
+//const result = empOne.replace(empTwo, 'Nick')
+
+
+
 
 
 
@@ -83,6 +105,18 @@
 */
 
 //CODE HERE
+class Manager extends Employee {
+    constructor(name, shift, employees) {
+        super(name, shift)
+        this.employees = employees
+    }
+    getEmployees() {
+        console.log(`${name} manages ${employees}`)
+    }
+    addEmployee(emp) {
+    emp === 'John'
+    }
+}
 
 
 
@@ -98,14 +132,15 @@
 */
 
 //CODE HERE
-
-
+const manger = new Manager('Winston', 'weekday morings, weekday afternoons', 'Cece and Schmidt')
+console.log(manger)
 /*
     Call the `getEmployees` method on the
     `manager` object.  
 */
 
 //CODE HERE
+manger.getEmployees.call()
 
 /*
     Call the `addEmployee` method on the 
