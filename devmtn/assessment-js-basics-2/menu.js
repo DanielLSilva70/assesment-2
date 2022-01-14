@@ -107,6 +107,7 @@ console.log(Pizza.price)
 */
 
 //CODE HERE
+const foodArr = [name, price, category, popularity, rating, tags]
 
 
 
@@ -123,6 +124,7 @@ console.log(Pizza.price)
 */
 
 //CODE HERE
+
 
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
