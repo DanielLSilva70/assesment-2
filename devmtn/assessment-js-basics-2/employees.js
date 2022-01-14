@@ -149,6 +149,7 @@ manger.getEmployees.call()
 */
 
 //CODE HERE 
+manger.addEmployee.call()
 
 /*
     Call the `getEmployees` method on the
@@ -157,3 +158,4 @@ manger.getEmployees.call()
 */
 
 //CODE HERE
+manger.addEmployee.call()
