@@ -58,9 +58,13 @@ console.log(total)
 */
 
 //CODE HERE
-function calcFinalPrice (cartTotal, couponValue, tac) {
+ function calcFinalPrice (cartTotal, couponValue, tax) {
+      return (cartTotal+(cartTotal * tax)) -couponValue
+
+ }
     
-}
+ 
+
 
 
 

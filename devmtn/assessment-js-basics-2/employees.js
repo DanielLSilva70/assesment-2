@@ -25,9 +25,8 @@ class Employee {
         this.name = name
         this.shift = shift
     }
-    getSchedule(schedule) {
-        this.shift = schedule
-        console.log(this.shift)
+    getSchedule() {
+        console.log(`${this.name} works on ${this.shift}`)
     }
 }
     
@@ -46,8 +45,9 @@ class Employee {
 */
 
 //CODE HERE
-const empOne = new Employee ('jess', 'weekday morings weekday afternoons')
-console.log(empOne)
+const empOne = new Employee ('Jess', 'weekday morings weekday afternoons')
+//console.log(empOne.getEmployees())
+
 
 
 
@@ -57,7 +57,7 @@ console.log(empOne)
 */
 
 //CODE HERE
-//getSchedule(empOne(shift))
+getSchedule(empOne(shift))
 
 /*
     Make a copy of the empOne object
@@ -74,7 +74,8 @@ console.log(empOne)
 //CODE HERE
 
 //const empTwo = 'Nick'
-//const result = empOne.replace(empTwo, 'Nick')
+
+const result = empOne.replace('jess', 'Nick')
 
 
 
@@ -111,14 +112,13 @@ class Manager extends Employee {
         this.employees = employees
     }
     getEmployees() {
-        console.log(`${name} manages ${employees}`)
+        console.log(`${this.name} manages ${this.employees}`)
     }
+
     addEmployee(emp) {
-    emp === 'John'
+     return 
     }
 }
-
-
 
 /*
     Create a new instance of your class.
@@ -132,15 +132,15 @@ class Manager extends Employee {
 */
 
 //CODE HERE
-const manger = new Manager('Winston', 'weekday morings, weekday afternoons', 'Cece and Schmidt')
-console.log(manger)
+const manager = new Manager('Winston', 'weekday morings, weekday afternoons', ['Cece', 'Schmidt'])
+console.log(manager)
 /*
     Call the `getEmployees` method on the
     `manager` object.  
 */
 
 //CODE HERE
-manger.getEmployees.call()
+manager.getEmployees()
 
 /*
     Call the `addEmployee` method on the 
@@ -149,7 +149,7 @@ manger.getEmployees.call()
 */
 
 //CODE HERE 
-manger.addEmployee.call()
+manager.addEmployee("kirt")
 
 /*
     Call the `getEmployees` method on the
@@ -158,4 +158,5 @@ manger.addEmployee.call()
 */
 
 //CODE HERE
-manger.addEmployee.call()
+manager.getEmployee()
+console.log(manager)

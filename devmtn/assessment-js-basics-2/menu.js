@@ -35,7 +35,7 @@ const Pizza = {
     name: 'Daniels pizza',
     price: 10,
     category: 'entree',
-    popularity: 10,
+    popularity: 8,
     rating: 10,
     tags: ['gluten free', 'fat free']
 
@@ -68,7 +68,7 @@ console.log(Pizza.popularity)
 */
 
 //CODE HERE
-console.log(Pizza.tags)
+console.log(Pizza.tags[1])
 
 
 /*
@@ -79,8 +79,8 @@ console.log(Pizza.tags)
 */
 
 //CODE HERE
-const Pizza {price: 16}
-console.log(Pizza.price)
+const { price } = Pizza
+console.log(price)
 
 
 /*
@@ -91,6 +91,9 @@ console.log(Pizza.price)
 */
 
 //CODE HERE
+
+const { category } = Pizza
+console.log(category)
 
 
 
@@ -106,10 +109,18 @@ console.log(Pizza.price)
     data in some functions that you'll write.
 */
 
+
+    
 //CODE HERE
-const foodArr = [name, price, category, popularity, rating, tags]
+const foodArr = 
+[{name:'Pepperoni', price: 8, category: 'entree', popularity: 10, rating: 8, tags: ['family', 'tasty']},
+{name: 'Cheese', price: 7, category: 'entree', popularity: 6, rating: 5, tags: ['kids' , 'basic']},
+{name: 'Meat lovers', price: 13, category: 'entree', popularity: 9, rating: 9, tags: ['adults', 'meaty']},
+{name: 'Vegan', price: 15, category: 'entree', popularity: 3, rating: 4, tags: ['vegan', 'no cheese']},
+{name: 'Buffalo Chicken', price: 12, category: 'entree', popularity: 7, rating: 7, tags: ['spicy', 'chicken']} ]
 
 
+//console.log(foodArr)
 
 //////////////////PROBLEM 4////////////////////
 /* 
@@ -126,7 +137,9 @@ const foodArr = [name, price, category, popularity, rating, tags]
 //CODE HERE
 
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+
+ const filteredFood = foodArr.filter((pizza) => pizza.tags == 'spicy')
+ console.log(filteredFood)
 
 
 
@@ -170,6 +183,10 @@ const foodArr = [name, price, category, popularity, rating, tags]
 */
 
 //CODE HERE
+function filterByProperty (property, type, number) {
+    
+}
+
 
 
 /*

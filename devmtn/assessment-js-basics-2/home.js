@@ -57,12 +57,12 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
 function canWeDeliver(zipCode) {
-    for(let i = 0; i < zipCode.length; i++)
-    if(zipCode[i] === zipCode.length) {
+    for(let i = 0; i < deliveryAreaZipCodes.length; i++){
+    if(deliveryAreaZipCodes[i] === zipCode) {
         return `You're in our delivery zone`
-    } else {
-        return `Sorry, we can't deliver to that address`
-    }
+    } 
+}
+return `Sorry, we can't deliver to that address`
 }
 
 
@@ -84,6 +84,9 @@ function canWeDeliver(zipCode) {
 */
 
 // CODE HERE
+  function canWeDeliverTwo (zipcode2) {
+      zipcode2
+  }
  
 
 //////////////////PROBLEM 3////////////////////
@@ -103,7 +106,7 @@ const deals = [
     {
         title: '15% Off!', 
         desc: 'Applied to your entire order when you spend $30 or more'
-    }, 
+    },
     {
         title: 'Free Kids Meal with 2 Regular Entrees', 
         desc: '   This deal lasts until the end of March! '
@@ -120,7 +123,8 @@ const deals = [
 */
 
 //CODE HERE
-deals.
+deals[0].title.replace('15', '10');
+
 
 
 
@@ -138,3 +142,5 @@ deals.
 */
 
 //CODE HERE
+ deals[1].desc.replace('March','April')
+console.log(deals)
