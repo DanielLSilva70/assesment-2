@@ -37,6 +37,10 @@ class Ticket {
         this.customerId = customerId
         this.status = queued
     }
+    updatedStatus(newStatus) {
+        console.log(newStatus(''))
+    }
+    
 }
 
 console.log(`The order for customer ${this.customerId} is now ${this.queued}`)
